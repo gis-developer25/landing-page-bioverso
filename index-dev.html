@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um curso para quem ama a vida em todas as suas formas!">
+    <title>BioVerso: o seu curso de Biologia!</title>
+    <link rel="stylesheet" type="text/css" href="style-dev.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <img class="cabecalho-imagem" src="imagens/logo-new.png" alt="Logo do curso BioVerso">
+       <nav class="cabecalho-menu">
+
+    <div class="dropdown">
+        <button class="cabecalho-menu-item">Menu ▾</button>
+        <div class="submenu">
+            <a>Sobre o curso</a>
+            <a>Módulos</a>
+            <a>Como funciona</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="cabecalho-menu-item">Planos ▾</button>
+        <div class="submenu">
+            <a>Mensal</a>
+            <a>Anual</a>
+            <a>Benefícios</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="cabecalho-menu-item">Aula grátis ▾</button>
+        <div class="submenu">
+            <a>Assistir agora</a>
+            <a>Conteúdo de teste</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="cabecalho-menu-item">Login ▾</button>
+        <div class="submenu">
+            <a>Entrar</a>
+            <a>Criar conta</a>
+        </div>
+    </div>
+
+</nav>
+
+
+    </header>
+
+<main class="conteudo">
+<section class="conteudo-principal">
+<div class="conteudo-principal-escrito">
+<h1 class="conteudo-principal-escrito-titulo">BioVerso</h1>
+<h2 class="conteudo-principal-escrito-subtitulo">O seu curso de Biologia</h2>
+<button class="conteudo-principal-escrito-botao">Conheça o curso</button>
+</div>
+</section>
+
+<section class="conteudo-secundario">
+<h3 class="conteudo-secundario-titulo">Este curso é para você, se...</h3>
+<p class="conteudo-secundario-paragrafo">1. você quer <strong>entender Biologia de verdade</strong>, não apenas decorar termos</p>
+<p class="conteudo-secundario-paragrafo">2. você aprende melhor com <strong>explicações visuais, exemplos práticos e aplicações reais</strong></p>
+<p class="conteudo-secundario-paragrafo">3. você quer estudar de forma <strong>organizada</strong>, com evolução clara</p>
+<p class="conteudo-secundario-paragrafo">4. você deseja ver <strong>como a Biologia se conecta com o mundo real</strong> (meio ambiente, saúde, cotidiano)</p>
+
+</section>
+</main>
+
+<footer class="rodape">
+<img class="rodape-imagem" src="imagens/nomedocurso.png" alt="Nome do curso">
+<p>Copyright © 2025 BioVerso. Curso fictício, desenvolvido apenas para esta landing page.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.dropdown button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const submenu = btn.nextElementSibling;
+
+        document.querySelectorAll('.submenu').forEach(menu => {
+            if (menu !== submenu) menu.style.display = 'none';
+        });
+
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+document.addEventListener('click', e => {
+    if (!e.target.closest('.dropdown')) {
+        document.querySelectorAll('.submenu').forEach(menu => {
+            menu.style.display = 'none';
+        });
+    }
+});
+</script>
+
+</body>
+
+</html>
