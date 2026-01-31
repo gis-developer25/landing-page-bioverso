@@ -1,5 +1,7 @@
 # BioVerso – Landing Page de Curso de Biologia
 
+*Projeto feito a partir do tutorial Rafaella Ballerini.
+
 Projeto de landing page responsiva criada com HTML, CSS e JavaScript, simulando a página inicial de um curso online de Biologia.
 
 O objetivo é praticar estruturação de layout, uso de imagens de fundo, menus interativos e organização visual.
